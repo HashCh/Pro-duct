@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.grid {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    display: inherit;
+
+}
+
+.card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h6 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+
+.card h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: var(--Very-dark-blue);
+}
+
+.card p {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.6em;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.price .new {
+    color: var(--Dark-cyan);
+    font-family: 'fraunces', serif;
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.price .old {
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 0;
+
+
+}
+
+button:hover {
+    background-color: var(--Very-dark-blue);
+
+}
